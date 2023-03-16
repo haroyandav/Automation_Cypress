@@ -24,4 +24,4 @@ describe('Handling Alerts' , function()
             expect(alert2).to.equal('Press a button!')
         })
 }
-)})
+)}) 

@@ -17,4 +17,4 @@ describe('.go() , back(-1) , forword(1) , reload' , function(){
           .reload().title().should('equal' , 'nopCommerce demo store. Register')
     })
 
-})
+}) 

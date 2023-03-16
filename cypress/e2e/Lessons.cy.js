@@ -6,4 +6,4 @@
     cy.contains('ՀՈԲԲԻ').click()
     cy.get(':nth-child(5) > .ty-subcategories-block__a').click()
     
-})*/
+})*/ 

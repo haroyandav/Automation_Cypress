@@ -117,4 +117,4 @@
         cy.get(':nth-child(2) > .view > .toggle').click();
         cy.get('.clear-completed').click();
         cy.contains("2 items left");
-})*/
+})*/ 

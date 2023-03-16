@@ -147,4 +147,4 @@ it('.trigger() - trigger an event on a DOM element' , function(){
     //.siblings('p')
     .contains('100').should('have.text' , '100')
     })
-  })
+  }) 
