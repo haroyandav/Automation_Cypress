@@ -41,8 +41,8 @@ Cypress.Commands.add("login", (email, password) => {
         // HyeID credentials
 
         cy.visit('https://development.connectto.com/hyeid-stage/auth/login?returnUrl=%2F')
-        cy.get('input[name=email]').clear().type(email)
-        cy.get('input[name=password]').clear().type(password)
+        cy.get('input[name=email]').type(email)
+        cy.get('input[name=password]').type(password)
         cy.get('[type=submit]').click()
 
 })
