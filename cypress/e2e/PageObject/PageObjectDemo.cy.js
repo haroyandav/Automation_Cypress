@@ -11,7 +11,6 @@ describe('Test LoginPage' , function (){
         lp.fillUserName('admin@yourstore.com')
         lp.fillPassword('admin')
         lp.clickLogInButton()
-        cy.location('pathname' , ).should('equal' , '/admin/')  
+        cy.location('pathname').should('eq' , '/admin/')  
     })
-
 })
