@@ -22,3 +22,4 @@ describe ('UI Elements' , function ()
         cy.title().should('eq' , 'Select a Flight: Mercury Tours:')
     })
 }) 
+

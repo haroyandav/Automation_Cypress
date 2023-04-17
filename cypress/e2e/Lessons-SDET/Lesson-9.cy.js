@@ -19,9 +19,4 @@ describe ('Search and Add to Card' , function()
             cy.get('#shopping-cart-form > div.table-wrapper > table > tbody > tr > td.subtotal > span').contains('$3,600.00')
             
         })          
-
-
-
-
-
-}) 
+})   
