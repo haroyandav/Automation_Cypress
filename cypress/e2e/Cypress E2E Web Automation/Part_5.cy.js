@@ -34,14 +34,9 @@ describe('Assertions demo' , ()=> {
             expect(expName).to.equal(actName) //1
 
             assert.equal(expName,actName) //2 
-
-
         })
 
-
     })
-
-
 
 }) 
 
