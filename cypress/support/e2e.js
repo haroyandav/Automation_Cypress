@@ -12,6 +12,7 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
+require('cypress-xpath')
 
 import '@applitools/eyes-cypress/commands'
 
@@ -29,3 +30,4 @@ cy.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
   })
+

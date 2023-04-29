@@ -8,6 +8,10 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
+
+/// <reference types = "Cypress" />
+/// <reference types = "cypress-xpath" /> 
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
