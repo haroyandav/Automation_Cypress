@@ -21,6 +21,5 @@ describe ('Check Login functionality with valid and invalid datas' , function() 
 
         cy.login('turkikirde@vusra.com' , 'Ddddddd54ddd1996.') // Invalid password 
         cy.contains('Incorrect username or password').should('be.visible')
-        
     })
 })
