@@ -31,16 +31,16 @@
 
 
 
-/*Cypress.Commands.add("login", (email, password) => { 
+Cypress.Commands.add("login", (email, password) => { 
 
         cy.visit('https://admin-demo.nopcommerce.com/login')
         cy.get('input[name=Email]').clear().type(email)
         cy.get('input[name=Password]').clear().type(password)
         cy.get('.button-1').click()
 
-})*/
+})
 
-Cypress.Commands.add("login", (email, password) => { 
+Cypress.Commands.add("loginHyeID", (email, password) => { 
         
         // HyeID credentials
 
@@ -49,4 +49,12 @@ Cypress.Commands.add("login", (email, password) => {
         cy.get('input[name=password]').type(password)
         cy.get('[type=submit]').click()
 
+})
+
+Cypress.Commands.add('getIframe' , (iframe) => {
+
+        cy.get(iframe)
+          .its('0.contentDocument.body')
+          .should('be.visible')
+          .then(cy.wrap)
 })
