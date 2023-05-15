@@ -10,9 +10,8 @@
 //
 
 /// <reference types = "Cypress" />
-/// <reference types = "cypress-xpath" /> 
+/// <reference types = "cypress-xpath" />
 
-//
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
 //
