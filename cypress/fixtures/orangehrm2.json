@@ -1,0 +1,19 @@
+[
+{
+    "email": "Admin" ,
+    "password": "admin123" ,
+    "expected": "Dashboard"
+},
+
+{
+    "email": "Admin12312" ,
+    "password": "admin123" ,
+    "expected": "Invalid credentials"
+},
+
+{
+    "email": "Admin" ,
+    "password": "Admin987" ,
+    "expected": "Invalid credentials" 
+}
+]

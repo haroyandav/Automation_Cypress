@@ -1,0 +1,22 @@
+[
+    {
+        "email": "turkikirde@vusra.com" ,
+        "password": "Dddddddddd1996." ,
+        "expected": "HyeID"
+    },
+    {
+        "email": "turkikirde@vusra.com" ,
+        "password": "Ddddddddd1996." ,
+        "expected": "Incorrect username or password"
+    },
+    {
+        "email": "turkikirasdde@vusra.com" ,
+        "password": "Dddddddddd1996." ,
+        "expected": "Incorrect username or password" 
+    } ,
+    {
+        "email": "asdturkikirde@vusra.com" ,
+        "password": "Ddddddddddd1996." ,
+        "expected": "Incorrect username or password" 
+    }
+]

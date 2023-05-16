@@ -1,4 +1,5 @@
 import 'cypress-iframe'
+
 require ('@4tw/cypress-drag-drop')
 
 describe('Mouse Operations' , function() {
@@ -61,7 +62,7 @@ cy.reload
     })
 
 
-    it.only('Scrolling page' , function() {
+    it('Scrolling page' , function() {
 
         cy.visit('https://www.countries-ofthe-world.com/flags-of-the-world.html')
 
