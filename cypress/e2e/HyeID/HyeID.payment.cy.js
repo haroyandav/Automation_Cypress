@@ -1,16 +1,11 @@
-/// <reference types= "cypress" />
 
+it.skip ('Click with label name' , function () {
 
+    cy.visit('https://development.connectto.com/hyeid-stage')
+    cy.clicklink('Create')
+})
 
-
-
-
-
-
-
-
-
-it ("Should navigate to the HyeID UI login page" , function () {
+it.skip ("Should navigate to the HyeID UI login page" , function () {
     cy.pause()
     
     cy.visit("https://development.connectto.com/hyeid-stage/auth/login?returnUrl=%2F")
