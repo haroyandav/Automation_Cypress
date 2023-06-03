@@ -32,7 +32,7 @@ describe('My test Suite' , function() {
                 cy.get("input[placeholder='Password']").type(userdata.password);
                 cy.get("button[type='submit']").click()
 
-                if(userdata.email == 'Admin' && userdata.password == 'admin123'){
+                if (userdata.email == 'Admin' && userdata.password == 'admin123'){
 
                 cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module")
                   .should('have.text' , userdata.expected)
@@ -44,11 +44,8 @@ describe('My test Suite' , function() {
                 }else {
                     cy.get(".oxd-text.oxd-text--p.oxd-alert-content-text")
                       .should('have.text' , userdata.expected)
-                }
-                
+                }                
             })
         })
-
     })
-
 })
