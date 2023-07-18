@@ -19,3 +19,7 @@ for (let car of cars) {
 cars.forEach((car) => {
     console.log(car)
 })
+
+for(let i = 1; i <= 10; i++){
+    console.log(i)
+}
