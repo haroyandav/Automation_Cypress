@@ -50,6 +50,17 @@ Cypress.Commands.add("loginHyeID", (email, password) => {
 
 })
 
+Cypress.Commands.add("loginHyeIDadmin", (email, password) => { 
+        
+        // HyeID credentials
+
+        cy.visit('https://development.connectto.com/hyeid-admin-stage')
+        cy.get('[placeholder="Email"]').type(email)
+        cy.get('[placeholder="Password"]').type(password)
+        cy.get('[type="submit"]').click()
+
+})
+
 Cypress.Commands.add('getIframe' , (iframe) => {
 
         cy.get(iframe)

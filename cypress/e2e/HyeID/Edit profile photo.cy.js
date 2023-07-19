@@ -6,7 +6,7 @@ describe('Edit profile photo' , () => {
 
         cy.visit('https://development.connectto.com/hyeid-stage/auth/login')
         cy.get("#email_form").type('turkikirde@vusra.com')
-        cy.get("#password_form").type('Dddddddddd1996.')            
+        cy.get("#password_form").type('Dddddddddd1996.')
         cy.get("button[type='submit']").click()
         
 });
@@ -38,4 +38,3 @@ describe('Edit profile photo' , () => {
 
     })
 });
-
