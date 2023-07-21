@@ -14,7 +14,7 @@ describe ('Statuses of User' , () => {
         cy.reload()
         cy.get('div').find('[class="bold font_size_refer_hy"]').then((statusOfUser) => {
 
-            let status = statusOfUser.text().trim()
+            let status = statusOfUser.text()
             
             if ( status.includes('Approved')) {
 
@@ -66,7 +66,8 @@ describe ('Statuses of User' , () => {
                 cy.get('tbody').find('td').eq(26).then((editactions) => {
                     cy.wrap(editactions).find('[title="Verify"]').click()
                 })
-
+                cy.get('[id="armFirstName"]').type('Դ')
+                cy.get('[id="armLastName"]').type('Դ')
                 cy.get('[class="card-footer pl-0 bg-white"]').find('[class="fa fa-check-circle-o"]').click()
                 cy.get('[class="btn btn-danger"]').click()
             }
