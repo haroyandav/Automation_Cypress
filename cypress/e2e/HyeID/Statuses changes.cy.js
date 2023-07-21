@@ -2,7 +2,7 @@ describe ('Statuses of User' , () => {
 
 
     beforeEach('Login to account' , () => {
-        cy.viewport(1900,900)
+        cy.viewport(2000,1000)
         cy.loginHyeID('turkikirde@vusra.com' , 'Dddddddddd1996.')
         
     })
