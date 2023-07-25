@@ -1,4 +1,3 @@
-
 it.skip ('Click with label name' , function () {
 
     cy.visit('https://development.connectto.com/hyeid-stage')
