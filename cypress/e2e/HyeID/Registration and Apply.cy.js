@@ -48,35 +48,10 @@ cy.get('iframe[name="html_msg_body"]').then((iframe) => {
     }
 
       })
-      /* cy.visit('https://development.connectto.com/hyeid-stage')
-      cy.get('input[name=email]').type(mailinatorEmail)
-      cy.get('input[name=password]').type('Dddddddddd1996.')
-      cy.get('[type=submit]').click() */
+      
       cy.loginHyeID(mailinatorEmail , 'Dddddddddd1996.')
       cy.wait(3000)
       if(cy.get('[class="btn bold a_hover_animation ng-star-inserted"]').contains(' Apply for HyeID Card ')){
-
-        /*cy.get('[class="btn bold a_hover_animation ng-star-inserted"]').click()
-        cy.get('[id="armFirstName"]').click({force:true}).type('Դավիթ')
-        cy.get('[id="armLastName"]').click({force:true}).type('Հարոյան')
-        cy.get('[class="btn bold font_size_ru save-btn"]').click()
-        cy.get('[formcontrolname="dobD"]').select('10').should('have.value' , '10: 10')
-        cy.get('[formcontrolname="dobM"]').select('July').should('have.value' , '6')
-        cy.get('[formcontrolname="dobY"]').select('1996').should('have.value' , '1996')
-        cy.get('[id="male"]').click()
-        cy.get('[class="btn bold font_size_ru save-btn"]').click()
-        cy.get('[formcontrolname="countryId"]').select('Armenia').should('have.value' , 'ARM')
-        cy.get('[formcontrolname="stateId"]').select('Yerevan').should('have.value' , '21: 359')
-        cy.get('[formcontrolname="cityId"]').select('Yerevan').should('have.value' , '7: 841')
-        cy.get('[id="address"]').click({force:true}).type('aaaaaaaa67')
-        cy.get('[id="zipCode"]').click({force:true}).type('0039')
-        cy.get('[class="btn bold font_size_ru save-btn"]').click()
-        cy.contains(' Skip for now ').click()
-        cy.contains(' Skip for now ').click()
-        cy.contains(' FINISH ').click()
-        cy.contains('Congratulations! You have become a HyeID member.').should('be.visible')
-        cy.get('[class="bold cursor_pointer"]').should('contain' , ' GO TO THE PAYMENT ')
-        cy.get('[class="amount ng-star-inserted"]').should('contain' , '֏600.00')*/
 
         cy.applyHyeID()
       }
