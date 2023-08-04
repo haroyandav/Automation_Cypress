@@ -66,8 +66,8 @@ describe ('Statuses of User' , () => {
                 cy.get('tbody').find('td').eq(26).then((editactions) => {
                     cy.wrap(editactions).find('[title="Verify"]').click()
                 })
-                cy.get('[id="armFirstName"]').type('Դ')
-                cy.get('[id="armLastName"]').type('Դ')
+                // cy.get('[placeholder="Arm First Name"]').clear().type('Դ')
+                // cy.get('[id="armLastName"]').clear().type('Դ')
                 cy.get('[class="card-footer pl-0 bg-white"]').find('[class="fa fa-check-circle-o"]').click()
                 cy.get('[class="btn btn-danger"]').click()
             }
