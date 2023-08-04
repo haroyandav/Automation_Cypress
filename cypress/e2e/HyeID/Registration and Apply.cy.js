@@ -44,7 +44,7 @@ cy.get('iframe[name="html_msg_body"]').then((iframe) => {
       cy.get('[type="submit"]').click()
       cy.wait(1000)
       cy.contains('Your account has been successfully verified').should('be.visible')
-      cy.wait(6000)
+      cy.wait(2000)
     }
 
       })
@@ -54,6 +54,7 @@ cy.get('iframe[name="html_msg_body"]').then((iframe) => {
       if(cy.get('[class="btn bold a_hover_animation ng-star-inserted"]').contains(' Apply for HyeID Card ')){
 
         cy.applyHyeID()
+      
       }
     })
   })
