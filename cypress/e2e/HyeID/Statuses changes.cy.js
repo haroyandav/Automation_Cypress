@@ -90,6 +90,7 @@ describe ('Statuses of User' , () => {
 
                 cy.get('[class="card-footer pl-0 bg-white"]').find('[class="fa fa-thumbs-o-up"]').click()
                 cy.get('[class="btn btn-danger"]').click()
+                
             }
         })
         

@@ -26,7 +26,7 @@ describe ('Check Login functionality with valid and invalid datas' , function() 
         cy.contains('Incorrect username or password').should('be.visible')
     })
 
-    it ('Login with Data Driven Test' , function() {
+    it.only ('Login with Data Driven Test' , function() {
 
         cy.fixture('HyeID_UI_login').then((data) => {
 
