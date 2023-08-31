@@ -1,3 +1,7 @@
+/// <reference types = "cypress-iframe" />
+
+import 'cypress-iframe'
+
 describe('' , () => {
         
 
@@ -11,7 +15,7 @@ describe('' , () => {
 
     })
 
-    it.only('Dynamic drop-down' , () => {
+    it('Dynamic drop-down' , () => {
         
         cy.viewport(2000 , 1300)
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
@@ -28,6 +32,14 @@ describe('' , () => {
                 cy.get('[id="autocomplete"]').should('have.value' , 'Western Sahara')
             }
         })
+    })
+
+    it.only('iframe' , () => {
+        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+
+        cy.frameLoaded('[id="courses-iframe"]')
+        cy.iframe().find("a[href*='mentorship']")
+        
     })
         
 })

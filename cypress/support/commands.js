@@ -11,6 +11,7 @@
 
 /// <reference types = "Cypress" />
 /// <reference types = "cypress-xpath" />
+/// <reference types = "cypress-iframe" />
 
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
@@ -98,3 +99,17 @@ Cypress.Commands.add("applyHyeID", () => {
         cy.get('[class="bold cursor_pointer"]').should('contain' , ' GO TO THE PAYMENT ')
         cy.get('[class="amount ng-star-inserted"]').should('contain' , '֏600.00')
 })
+
+Cypress.Commands.add('loginAndCaptureProductInfo', () => {
+        cy.viewport(2000, 1000);
+        cy.visit('https://rahulshettyacademy.com/client');
+        cy.get('[id="userEmail"]').type('sss@mailinator.com');
+        cy.get('[id="userPassword"]').type('123456Tt.');
+        cy.get('[id="login"]').click();
+      
+        cy.get('[class="card-body"]').eq(1).find('b').should('be.visible').invoke('text').then((name1) => {
+          
+            cy.wrap(name1).as('productName');
+
+        });
+});
