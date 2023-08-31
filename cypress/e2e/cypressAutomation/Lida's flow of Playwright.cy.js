@@ -5,8 +5,6 @@ describe ('Flow' , () => {
     let firstitemPrice;
     let seconditemName;
     let seconditemPrice;
-    let firstID;
-    let secondID;
 
     beforeEach('Login and checking' , () => {
 
@@ -101,10 +99,20 @@ describe ('Flow' , () => {
 
             let result2 = id2.replace(/\|/g, '')
             cy.log(result2)
-
+        cy.wait(6000)
         cy.get('[class="btn btn-custom"]').eq(1).click()
+        cy.wait(5000)
         
-            
+        cy.get('tbody > tr:nth-child(1) > th').invoke('text').then((tableresult2) => {
+
+            let endresult2 = result2.trim()
+            expect(endresult2).to.eq(tableresult2)
+        cy.get('tbody > tr:nth-child(2) > th').invoke('text').then((tableresult) => {
+
+            let endresult = result.trim()
+            expect(endresult).to.eq(tableresult)
+        })
+        })
             })
         })
 
