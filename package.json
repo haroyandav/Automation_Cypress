@@ -10,11 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.27.8",
-    "cypress": "^12.15.0"
+    "@applitools/eyes-cypress": "^3.27.8"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.3",
+    "cypress": "^13.1.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
