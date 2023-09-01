@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   eyesIsDisabled: false,
+  chromeWebSecurity: false,
   eyesFailCypressOnDiff: true,
   eyesDisableBrowserFetching: false,
   eyesTestConcurrency: 5,
