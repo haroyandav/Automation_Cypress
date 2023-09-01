@@ -11,7 +11,7 @@ describe('Handle dropdowns' , function() {
     })
 
     
-    it ('Drop down without select' , function (){
+    it.only ('Drop down without select' , function (){
 
         cy.visit('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
         cy.get('#select2-billing_country-container').click()
@@ -30,7 +30,7 @@ describe('Handle dropdowns' , function() {
 
     })
 
-    it.only ('Dynamic Drop down' , function (){
+    it ('Dynamic Drop down' , function (){
 
         cy.visit('https://www.google.com/')
         cy.get('#APjFqb').type('cypress automation')
