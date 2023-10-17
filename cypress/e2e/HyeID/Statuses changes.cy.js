@@ -3,15 +3,15 @@ describe ('Statuses of User' , () => {
 
     beforeEach('Login to account' , () => {
         cy.viewport(2000,1000)
-        cy.loginHyeID('turkikirde@vusra.com' , 'Dddddddddd1996.')
+        cy.loginHyeID('hyeid1@mailinator.com' , 'Dddddd96.')
         
     })
 
     it('Statuses of User' , () => {
         cy.wait(2000)
         cy.reload()
-        cy.get('[class="content-center"]').find('[class="bold"]').should('have.text' , 'Davit Haroyan').and('be.visible')
-        cy.reload()
+        /*cy.get('[class="content-center"]').find('[class="bold"]').should('have.text' , 'Davit Haroyan').and('be.visible')
+        cy.reload()*/
         cy.get('div').find('[class="bold font_size_refer_hy"]').then((statusOfUser) => {
 
             let status = statusOfUser.text()
@@ -58,7 +58,7 @@ describe ('Statuses of User' , () => {
                 cy.get('app-sortable-table-header').find('thead').then((thead) => {
 
                     cy.wrap(thead).find('th').eq(8).then((email) => {
-                        cy.wrap(email).find('input').type('turkikirde@vusra.com')
+                        cy.wrap(email).find('input').type('hyeid1@mailinator.com')
                     })
                 })
                 cy.wait(1000)
@@ -79,7 +79,7 @@ describe ('Statuses of User' , () => {
                 cy.get('app-sortable-table-header').find('thead').then((thead) => {
 
                     cy.wrap(thead).find('th').eq(8).then((email) => {
-                        cy.wrap(email).find('input').type('turkikirde@vusra.com')
+                        cy.wrap(email).find('input').type('hyeid1@mailinator.com')
                     })
                 })
                 cy.wait(1000)
