@@ -113,3 +113,16 @@ Cypress.Commands.add('loginAndCaptureProductInfo', () => {
 
         });
 });
+
+Cypress.Commands.add('inputPage' , () => {
+
+        cy.get('div .card a').then(function(editButton) {
+
+                cy.wrap(editButton).eq(0).click().then(function () {
+    
+                    cy.get("input[id='fullName']").should('have.attr' , 'placeholder' , 'Enter first & last name')
+                      .and('be.visible')
+                      .type('Davit')
+                })
+            })
+})
