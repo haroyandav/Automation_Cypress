@@ -16,5 +16,9 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 }
 
+/* const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+module.exports = (on, config) => {
+  on('task', {downloadFile})
+} */
 
 require('@applitools/eyes-cypress')(module);

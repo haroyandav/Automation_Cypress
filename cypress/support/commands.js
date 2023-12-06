@@ -1,3 +1,5 @@
+
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -12,6 +14,10 @@
 /// <reference types = "Cypress" />
 /// <reference types = "cypress-xpath" />
 /// <reference types = "cypress-iframe" />
+import 'cypress-file-upload'
+import 'cypress-iframe'
+import 'cypress-xpath'
+
 
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
