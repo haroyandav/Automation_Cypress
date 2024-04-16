@@ -132,3 +132,26 @@ Cypress.Commands.add('inputPage' , () => {
                 })
             })
 })
+
+
+Cypress.Commands.add("loginTCMSeller", (email, password) => { 
+        
+        
+
+        cy.visit('https://seller.dev.telcellmarket.am/en/sign-in')
+        cy.get('[placeholder="email@gmail.com"]').type(email)
+
+        cy.get('[placeholder="Password"]').type(password)
+
+        cy.wait(2000)
+
+        cy.get('[type="submit"]').click()
+
+        cy.wait(3000)
+
+        cy.contains('Account').should('be.visible')
+        cy.wait(2000)
+
+        cy.get('.sc-chKoiE').click()
+
+})
